@@ -1,0 +1,24 @@
+- yarn init -y (Criação do projeto apenas com o package.json)
+- yarn add express
+- yarn add typescript -D
+- yarn tsc --init (Criação do arquivo tsconfig.json)
+    - Criação da pasta src
+        - dentro da pasta src criação do arquivo server.ts
+    - configuração do arquivo tsconfig.json
+        "outDir": "./dist",   (Local onde e armazenados os arquivos JS que são gerados pelos arquivos TS)
+        "rootDir": "./src",
+- yarn tsc (Transforma os arquivos TS em JS conforme configuração acima)
+- import exprrress from 'express';  (Importando o exprress para o arquivo server.ts)
+- yarn add @types/express -D (instalando declaração de types)
+- Configuração de atalho para comando 'yarn tsc' se transformar em 'yarn build'.
+        "scripts": {
+            "build": "tsc"
+        },
+- ts-node-dev -D
+- Configuração de atalho para comando
+     "scripts": {
+        "dev:server": "ts-node-dev --inspect --transpile-only --ignore node_modules scr/server.ts"
+     },
+- yarn dev:server  " Faz o papel do tsc e atualiza o sistema"
+- yarn add uuidv4   "Para criar ID"
+- yarn add date-fns  (Trabalhar com data no node e no react)
