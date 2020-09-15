@@ -5,7 +5,7 @@ import AppError from '@shared/errors/AppError';
 
 
 import Appointment from '../infra/typeorm/entities/Appointment';
-import AppointmentRepository from '../repositories/AppointmentsRepository';
+import AppointmentRepository from '../infra/typeorm/repositories/AppointmentsRepository';
 
 interface RequestDTO {
   provider_id: string;
